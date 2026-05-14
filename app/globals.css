@@ -459,3 +459,101 @@ footer {
   border-top: 1px solid var(--n10);
   margin: 0;
 }
+
+/* RESPONSIVE — mobile */
+@media (max-width: 768px) {
+  nav {
+    padding: 0 20px;
+    gap: 12px;
+  }
+  .nav-right {
+    gap: 12px;
+  }
+  .btn-primary,
+  .btn-outline {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .hero {
+    padding: 48px 20px 48px;
+  }
+  .hero-sub {
+    font-size: 16px;
+  }
+  .email-form {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .email-input {
+    border-right: 1px solid var(--ink);
+    border-bottom: none;
+  }
+
+  .stats {
+    padding: 32px 20px;
+  }
+  .stats-inner {
+    grid-template-columns: 1fr;
+  }
+  .stat-number {
+    font-size: 40px;
+  }
+
+  .problem {
+    padding: 48px 20px;
+  }
+  .problem-header {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+  .problem-cols {
+    grid-template-columns: 1fr;
+  }
+  .problem-col {
+    padding: 28px 20px;
+  }
+
+  .solution {
+    padding: 48px 20px;
+  }
+  .solution-header {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+  .solution-cols {
+    grid-template-columns: 1fr;
+  }
+  .solution-col {
+    padding: 28px 20px;
+  }
+
+  .cta-band {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 48px 20px;
+  }
+  .cta-actions {
+    width: 100%;
+  }
+  .cta-actions .btn-primary,
+  .cta-actions .btn-outline {
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px 20px;
+  }
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
