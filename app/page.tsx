@@ -127,28 +127,6 @@ export default function V2Page() {
       {/* ── PAPER MAIN ── */}
       <div className="paper-main">
 
-        {/* TOP BAR */}
-        <div className="topbar">
-          <div className="wrap">
-            <div className="topbar-inner">
-              <a href="/" className="mark" aria-label="Kentos AI">
-                kentos<span className="dot" /><span className="ai">ai</span>
-              </a>
-              <nav className="nav">
-                <a className="live" href="#">Live beta</a>
-              </nav>
-              <div className="topbar-ctas">
-                <a className="btn outline" href="https://calendly.com/tomasz-kentos/30min" target="_blank" rel="noopener noreferrer">
-                  Book a call
-                </a>
-                <a className="btn" href="#hero-form">
-                  Get early access <span className="arrow">→</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* HERO */}
         <section className="hero">
           <div className="wrap">
@@ -157,13 +135,13 @@ export default function V2Page() {
               {/* Left */}
               <div>
                 <div className="eyebrow">Surprised with the AI invoice?</div>
-                <h1 className="hero-head" style={{ fontSize: 'clamp(56px, 7vw, 100px)' }}>
+                <h1 className="hero-head" style={{ fontSize: 'clamp(80px, 12vw, 184px)' }}>
                   Close<br />the open bar<span className="end-dot" />
                 </h1>
                 <p className="hero-lede" style={{ fontSize: '20px' }}>
                   AI costs are rising faster than any other line in your budget: unpredictable,
                   wasteful, and invisible until the bill arrives. Kentos gives you control to make
-                  your token spend smarter.&nbsp;&nbsp;
+                  your token spend smarter.
                   <strong className="lede-bold">A modern payroll for your agents.</strong>
                 </p>
                 <form id="hero-form" className="hero-cta" onSubmit={handleSubmit}>

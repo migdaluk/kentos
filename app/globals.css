@@ -179,7 +179,7 @@
 }
 
 /* ── Hero ───────────────────────────────────────────────── */
-.v2 .hero { padding: 72px 0 80px; }
+.v2 .hero { padding: 56px 0 96px; border-bottom: 1px solid var(--ink); }
 .v2 .hero-grid {
   display: grid;
   grid-template-columns: 7fr 5fr;
@@ -207,13 +207,15 @@
   vertical-align: 0.08em;
 }
 .v2 .hero-lede {
-  font-family: var(--body);
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(22px, 2.2vw, 28px);
   color: var(--g-70);
-  line-height: 1.55;
+  line-height: 1.45;
   max-width: 540px;
   margin-bottom: 36px;
 }
-.v2 .hero-lede .lede-bold { color: var(--ink); font-weight: 600; }
+.v2 .hero-lede .lede-bold { color: var(--ink); font-weight: 800; display: inline-block; margin-top: 10px; }
 .v2 .hero-cta {
   display: flex;
   gap: 0;
@@ -261,7 +263,7 @@
   color: var(--paper);
   font-family: var(--mono);
   font-size: 12px;
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--ink);
 }
 .v2 .term-bar {
   display: flex;
@@ -287,6 +289,8 @@
   padding: 16px 16px 0;
   height: 380px;
   overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
 .v2 .term-line {
   display: grid;
@@ -316,7 +320,7 @@
 .v2 .term-foot .num {
   font-family: var(--display);
   font-weight: 800;
-  font-size: 18px;
+  font-size: 22px;
   display: block;
   color: var(--paper);
   letter-spacing: -0.02em;
@@ -341,7 +345,7 @@
   font-family: var(--mono);
   font-size: 11px;
   font-weight: 500;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   animation: v2-tick 60s linear infinite;
   width: max-content;
@@ -355,11 +359,12 @@
   padding: 20px 0;
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 24px;
   font-family: var(--mono);
   font-size: 11px;
   letter-spacing: 0.1em;
-  color: var(--g-50);
+  text-transform: uppercase;
+  color: var(--g-30);
 }
 .v2 .mini-foot .copy { margin-right: auto; }
 .v2 .mini-foot a:hover { color: var(--paper); }
@@ -373,7 +378,8 @@
   z-index: 1000;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: 40px 24px;
+  backdrop-filter: blur(2px);
 }
 .v2 .modal.open { display: flex; }
 .v2 .modal-card {
@@ -456,7 +462,7 @@
 .v2 .logo-band {
   background: var(--ink);
   width: 100%;
-  padding: 20px 0;
+  padding: 28px 0;
 }
 .v2 .logo-bar { display: flex; align-items: center; }
 
