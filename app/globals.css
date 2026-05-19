@@ -29,6 +29,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .v2 a { color: inherit; text-decoration: none; }
@@ -168,7 +169,7 @@
 .v2 .btn.red:hover { background: var(--ink); }
 
 /* ── Paper main ─────────────────────────────────────────── */
-.v2 .paper-main { background: var(--paper); flex: 1; }
+.v2 .paper-main { background: var(--paper); }
 
 /* ── Masthead rule ──────────────────────────────────────── */
 .v2 .masthead {
@@ -229,6 +230,7 @@
   border: 1.5px solid var(--ink);
   border-right: none;
   padding: 0 18px;
+  box-sizing: border-box;
   flex: 1;
   outline: none;
   color: var(--ink);
