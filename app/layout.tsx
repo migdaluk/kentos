@@ -27,6 +27,7 @@ export const metadata: Metadata = {
   title: 'kentos.ai — Close the open bar.',
   description:
     'Kentos sits between your apps and your AI providers, cuts the bill by 40–60%, and gives your CFO a dashboard that proves it.',
+  icons: { icon: '/favicon.png' },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

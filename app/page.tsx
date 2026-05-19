@@ -117,8 +117,8 @@ export default function V2Page() {
       <div className="logo-band">
         <div className="wrap">
           <div className="logo-bar">
-            <a href="/" className="mark" aria-label="Kentos AI">
-              kentos<span className="dot" /><span className="ai">ai</span>
+            <a href="/" aria-label="Kentos AI">
+              <img src="/logo-on-ink.svg" alt="Kentos AI" height="28" style={{ display: 'block' }} />
             </a>
           </div>
         </div>

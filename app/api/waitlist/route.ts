@@ -20,7 +20,7 @@ function welcomeHtml(email: string) {
           <!-- Logo -->
           <tr>
             <td style="padding:0 0 40px 0;">
-              <img src="https://kentos.ai/logo-email.svg" alt="kentos.ai" width="120" height="32" style="display:block;border:0;">
+              <img src="https://kentos.ai/logo-on-ink.svg" alt="kentos.ai" width="140" height="28" style="display:block;border:0;">
             </td>
           </tr>
 
