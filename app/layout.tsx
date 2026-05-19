@@ -4,21 +4,22 @@ import './globals.css'
 
 const archivo = Archivo({
   subsets: ['latin'],
-  weight: ['400', '500', '700', '800', '900'],
+  weight: ['400', '500', '600', '700', '800', '900'],
+  style: ['normal', 'italic'],
   variable: '--font-archivo',
   display: 'swap',
 })
 
 const inter = Inter({
   subsets: ['latin'],
-  weight: ['400', '500', '600'],
+  weight: ['300', '400', '500', '600', '700'],
   variable: '--font-inter',
   display: 'swap',
 })
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
-  weight: ['400', '500'],
+  weight: ['400', '500', '600'],
   variable: '--font-jetbrains-mono',
   display: 'swap',
 })

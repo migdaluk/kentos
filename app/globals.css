@@ -149,7 +149,7 @@ html, body { margin: 0; padding: 0; overflow-x: hidden; }
   font-family: var(--body);
   font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.01em;
+  letter-spacing: -0.005em;
   background: var(--ink);
   color: var(--paper);
   border-radius: 0;
@@ -385,17 +385,20 @@ html, body { margin: 0; padding: 0; overflow-x: hidden; }
 
 /* ── Privacy modal ──────────────────────────────────────── */
 .v2 .modal {
-  display: none;
   position: fixed;
   inset: 0;
-  background: rgba(10,10,10,0.7);
+  background: rgba(10,10,10,0.78);
   z-index: 1000;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 40px 24px;
   backdrop-filter: blur(2px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease;
 }
-.v2 .modal.open { display: flex; }
+.v2 .modal.open { opacity: 1; pointer-events: auto; }
 .v2 .modal-card {
   background: var(--paper);
   max-width: 720px;
@@ -403,7 +406,10 @@ html, body { margin: 0; padding: 0; overflow-x: hidden; }
   max-height: 86vh;
   overflow-y: auto;
   border: 1px solid var(--ink);
+  transform: translateY(8px);
+  transition: transform 0.18s ease;
 }
+.v2 .modal.open .modal-card { transform: translateY(0); }
 .v2 .modal-head {
   display: flex;
   align-items: center;
@@ -517,7 +523,7 @@ html, body { margin: 0; padding: 0; overflow-x: hidden; }
   .v2 .term-line { grid-template-columns: 56px minmax(0,1fr) auto; gap: 10px; font-size: 10.5px; }
   .v2 .term-line .who { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .v2 .term-foot { grid-template-columns: 1fr 1fr 1fr; }
-  .v2 .term-foot > div { padding: 10px 8px; font-size: 8.5px; }
+  .v2 .term-foot > div { padding: 10px 8px; font-size: 8.5px; letter-spacing: 0.1em; }
   .v2 .term-foot .num { font-size: 16px; }
 
   .v2 .mini-foot { flex-wrap: wrap; gap: 12px; font-size: 10px; letter-spacing: 0.1em; padding: 16px 0; }
