@@ -215,7 +215,7 @@
   max-width: 540px;
   margin-bottom: 36px;
 }
-.v2 .hero-lede .lede-bold { color: var(--ink); font-weight: 800; display: inline-block; margin-top: 10px; }
+.v2 .hero-lede .lede-bold { color: var(--ink); font-weight: 800; display: block; margin-top: 10px; }
 .v2 .hero-cta {
   display: flex;
   gap: 0;
@@ -465,6 +465,8 @@
   padding: 28px 0;
 }
 .v2 .logo-bar { display: flex; align-items: center; }
+.v2 .logo-band .mark { color: var(--paper); }
+.v2 .logo-band .mark .ai { color: var(--g-50); border-left-color: var(--rule); }
 
 /* ── Keyframes ──────────────────────────────────────────── */
 @keyframes v2-blink { 0%,100% { opacity: 1; } 50% { opacity: 0.25; } }

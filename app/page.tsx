@@ -135,7 +135,7 @@ export default function V2Page() {
               {/* Left */}
               <div>
                 <div className="eyebrow">Surprised with the AI invoice?</div>
-                <h1 className="hero-head" style={{ fontSize: 'clamp(80px, 12vw, 184px)' }}>
+                <h1 className="hero-head" style={{ fontSize: 'clamp(64px, 8vw, 120px)' }}>
                   Close<br />the open bar<span className="end-dot" />
                 </h1>
                 <p className="hero-lede" style={{ fontSize: '20px' }}>
