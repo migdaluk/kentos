@@ -96,7 +96,7 @@ export default function V2Page() {
       await fetch('/api/waitlist', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, source: '/v2' }),
       })
     } catch {}
     setSubmitted(true)
