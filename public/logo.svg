@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="36" viewBox="0 0 160 36">
+  <!-- kentos -->
+  <text x="0" y="27" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-weight="900" font-size="26" letter-spacing="-0.8" fill="#0A0A0A">kentos</text>
+  <!-- red square dot -->
+  <rect x="102" y="17" width="10" height="10" fill="#E63521"/>
+  <!-- vertical separator -->
+  <line x1="123" y1="8" x2="123" y2="28" stroke="#C7C2B8" stroke-width="1"/>
+  <!-- AI -->
+  <text x="131" y="24" font-family="'Courier New',Courier,monospace" font-weight="500" font-size="11" letter-spacing="2" fill="#7A746E">AI</text>
+</svg>

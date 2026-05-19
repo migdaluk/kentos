@@ -20,10 +20,7 @@ function welcomeHtml(email: string) {
           <!-- Logo -->
           <tr>
             <td style="padding:0 0 40px 0;">
-              <span style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:900;font-size:20px;letter-spacing:-0.035em;color:#0A0A0A;">
-                kentos<span style="display:inline-block;width:7px;height:7px;background:#E63521;margin:0 1px 2px 1px;vertical-align:middle;"></span>
-              </span>
-              <span style="font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#7A746E;margin-left:8px;">ai</span>
+              <img src="https://kentos.ai/logo-email.svg" alt="kentos.ai" width="120" height="32" style="display:block;border:0;">
             </td>
           </tr>
 
