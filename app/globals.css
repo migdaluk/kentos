@@ -450,32 +450,33 @@ html, body { margin: 0; padding: 0; overflow-x: hidden; }
 .v2 .modal-body h1 {
   font-family: var(--display);
   font-weight: 900;
-  font-size: 32px;
-  letter-spacing: -0.03em;
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: -0.025em;
   color: var(--ink);
   margin-bottom: 8px;
 }
-.v2 .modal-body h1 em {
-  font-style: italic;
-  font-weight: 500;
-}
+.v2 .modal-body h1 em { font-style: italic; font-weight: 700; color: var(--red); }
 .v2 .modal-body .updated {
   font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.1em;
-  color: var(--g-50);
-  margin-bottom: 28px;
+  font-size: 10px;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
+  color: var(--g-50);
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--ink);
 }
 .v2 .modal-body h2 {
   font-family: var(--display);
   font-weight: 800;
   font-size: 16px;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.005em;
   color: var(--ink);
-  margin: 24px 0 8px;
+  margin: 22px 0 6px;
 }
-.v2 .modal-body p { margin-bottom: 8px; }
+.v2 .modal-body p { color: var(--g-70); }
+.v2 .modal-body p + p { margin-top: 14px; }
 .v2 .modal-body a { color: var(--red); border-bottom: 1px solid var(--red); }
 .v2 .modal-body strong { color: var(--ink); font-weight: 600; }
 
@@ -505,7 +506,7 @@ html, body { margin: 0; padding: 0; overflow-x: hidden; }
   .v2 .hero-head { font-size: clamp(48px, 13vw, 68px) !important; line-height: 0.92; letter-spacing: -0.035em; }
   .v2 .hero-lede { font-size: 17px !important; line-height: 1.4; margin-top: 24px; max-width: none; }
   .v2 .hero-cta { flex-direction: column; max-width: 100%; }
-  .v2 .hero-email { width: 100%; height: 52px; font-size: 15px; border-right: 1.5px solid var(--ink); }
+  .v2 .hero-email { flex: 0 0 auto; width: 100%; height: 52px; font-size: 15px; padding: 0 16px; }
   .v2 .hero-cta .btn { width: 100%; height: 52px; justify-content: center; font-size: 14px; }
   .v2 .hero-note { font-size: 10px; letter-spacing: 0.08em; margin-top: 14px; }
 
@@ -519,8 +520,7 @@ html, body { margin: 0; padding: 0; overflow-x: hidden; }
   .v2 .term-foot > div { padding: 10px 8px; font-size: 8.5px; }
   .v2 .term-foot .num { font-size: 16px; }
 
-  .v2 .mini-foot { flex-direction: column; align-items: flex-start; gap: 12px; }
-  .v2 .mini-foot .copy { margin-right: 0; }
+  .v2 .mini-foot { flex-wrap: wrap; gap: 12px; font-size: 10px; letter-spacing: 0.1em; padding: 16px 0; }
 }
 
 /* ═══════════════════════════════════════════════════════════
