@@ -210,24 +210,14 @@ export default function V2Page() {
       {/* ── TICKER BAND ── */}
       <div className="tickerband" aria-hidden="true">
         <div className="tickerband-track">
-          {[
-            'Close the open bar',
-            'Payroll, but for your agents',
-            'The invoice shouldn’t be the first signal',
-            '40–60% of agent calls are waste',
-            '15× spread between cheapest valid model and the one engineers pick',
-            '$82.4k preventable monthly spend at a 40-engineer Series A',
-            '9 days · 14,000 retries / hr · $42,400 bill',
-            'Close the open bar',
-            'Payroll, but for your agents',
-            'The invoice shouldn’t be the first signal',
-            '40–60% of agent calls are waste',
-            '15× spread between cheapest valid model and the one engineers pick',
-            '$82.4k preventable monthly spend at a 40-engineer Series A',
-            '9 days · 14,000 retries / hr · $42,400 bill',
-          ].map((text, i) => (
-            <span key={i}>{text}</span>
-          ))}
+          <span>&ldquo;Our compute costs now far exceed employee costs.&rdquo;<em className="attr">Bryan Catanzaro · Nvidia</em></span>
+          <span>&ldquo;The budget I thought I would need is blown away already.&rdquo;<em className="attr">Praveen Neppalli Naga · CTO, Uber</em></span>
+          <span>&ldquo;I was looking at why are we spending so many tokens on all this — sometimes it&rsquo;s the most token-inefficient things.&rdquo;<em className="attr">Satya Nadella · CEO, Microsoft</em></span>
+          <span>&ldquo;Four-person team had incurred a monthly bill of US$113,000 from Anthropic.&rdquo;<em className="attr">Amos Bar-Joseph · CEO, Swan AI</em></span>
+          <span aria-hidden="true">&ldquo;Our compute costs now far exceed employee costs.&rdquo;<em className="attr">Bryan Catanzaro · Nvidia</em></span>
+          <span aria-hidden="true">&ldquo;The budget I thought I would need is blown away already.&rdquo;<em className="attr">Praveen Neppalli Naga · CTO, Uber</em></span>
+          <span aria-hidden="true">&ldquo;I was looking at why are we spending so many tokens on all this — sometimes it&rsquo;s the most token-inefficient things.&rdquo;<em className="attr">Satya Nadella · CEO, Microsoft</em></span>
+          <span aria-hidden="true">&ldquo;Four-person team had incurred a monthly bill of US$113,000 from Anthropic.&rdquo;<em className="attr">Amos Bar-Joseph · CEO, Swan AI</em></span>
         </div>
       </div>
 
@@ -235,9 +225,9 @@ export default function V2Page() {
       <div className="mini-foot-band">
         <div className="wrap">
           <div className="mini-foot">
-            <span className="copy">© Kentos.AI 2026</span>
+            <span className="copy"><span className="dot" />© Kentos.AI 2026</span>
             <a href="mailto:contact@kentos.ai">contact@kentos.ai</a>
-            <button onClick={() => setPrivacy(true)}>Privacy policy</button>
+            <a href="#" onClick={e => { e.preventDefault(); setPrivacy(true) }}>Privacy policy</a>
           </div>
         </div>
       </div>
