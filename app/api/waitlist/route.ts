@@ -29,7 +29,7 @@ function welcomeHtml(email: string) {
 
           <!-- Body -->
           <tr>
-            <td style="padding:40px 0 32px 0;">
+            <td style="padding:12px 0 32px 0;">
               <p style="font-size:15px;line-height:1.6;color:#3A3531;margin:0 0 20px 0;">
                 Hi,
               </p>
@@ -37,11 +37,11 @@ function welcomeHtml(email: string) {
                 We got your email — <strong style="color:#0A0A0A;">${email}</strong> is on the list.
               </p>
               <p style="font-size:15px;line-height:1.6;color:#3A3531;margin:0 0 20px 0;">
-                We're in early discovery — talking to engineering directors and CTOs about how AI
-                spend actually works inside their orgs. No pitch, no demo. Just a real conversation.
+                We're talking to finance and engineering leaders about how AI spend actually works
+                inside their orgs — before we build anything. No pitch, no demo. Just a conversation.
               </p>
               <p style="font-size:15px;line-height:1.6;color:#3A3531;margin:0;">
-                We'll reach out personally within a few days.
+                We'll be in touch personally.
               </p>
             </td>
           </tr>
@@ -63,8 +63,8 @@ function welcomeHtml(email: string) {
           <tr>
             <td style="padding:32px 0 0 0;">
               <p style="font-size:13px;color:#7A746E;margin:0 0 4px 0;">—</p>
-              <p style="font-size:13px;font-weight:700;color:#0A0A0A;margin:0 0 2px 0;">Łukasz Migda</p>
-              <p style="font-size:13px;color:#7A746E;margin:0 0 16px 0;">Co-founder · Kentos.</p>
+              <p style="font-size:13px;font-weight:700;color:#0A0A0A;margin:0 0 2px 0;">Tomasz Rudolf &amp; Łukasz Migda</p>
+              <p style="font-size:13px;color:#7A746E;margin:0 0 16px 0;">Co-founders · Kentos.</p>
               <p style="font-size:11px;letter-spacing:0.1em;font-family:'Courier New',Courier,monospace;color:#7A746E;margin:0;text-transform:lowercase;">
                 close the open bar._
               </p>
@@ -120,7 +120,7 @@ export async function POST(req: NextRequest) {
     // Welcome email → user
     tasks.push(
       resend.emails.send({
-        from: 'Łukasz @ Kentos <contact@kentos.ai>',
+        from: 'kentos.ai <contact@kentos.ai>',
         to: email,
         subject: 'You\'re on the list — kentos.ai',
         html: welcomeHtml(email),
