@@ -1,3 +1,6 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { margin: 0; padding: 0; overflow-x: hidden; }
+
 /* ── V2 page wrapper — all styles scoped to avoid conflicts with globals.css ── */
 
 .v2 {
